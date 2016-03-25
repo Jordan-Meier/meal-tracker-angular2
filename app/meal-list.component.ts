@@ -11,7 +11,7 @@ import { CaloriesPipe } from './calories.pipe';
   directives: [MealDetailsComponent, NewMealComponent, EditMealComponent],
   pipes: [CaloriesPipe],
   template: `
-    <select (change)="onChangeCalories($event.target.value)" class="select">
+    <select (change)="onChangeCalories($event.target.value)" class="input-lg select">
       <option value="all">Show All</option>
       <option value="healthy">Show meals under 300 calories</option>
       <option value="unhealthy">Show meals over 300 calories</option>
