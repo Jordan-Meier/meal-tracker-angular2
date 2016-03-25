@@ -1,3 +1,59 @@
-h1 {
-  color: blue;
+
+/*@keyframes header {
+  0% {background-color: lightblue;}
+  25% {background-color: lightslategrey;}
+  50% {background-color: lightpink;}
+  100% {background-color: lightgreen;}
+}*/
+
+/*@keyframes circle {
+  10% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}*/
+
+@keyframes animate {
+  0% {background-color: lightblue;}
+  25% {background-color: lightslategrey;}
+  50% {background-color: lightpink;}
+  100% {background-color: lightgreen;}
+}
+
+.animate {
+  background-color: lightblue;
+  margin-top: 5px;
+  animation-name: animate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#leftCircle {
+  display: inline-flex;
+  width: 40px;
+  height: 30px;
+  /*background: red;*/
+  border-radius: 50px;
+  margin-left: 2%;
+  opacity: 0.7;
+    /*background: radial-gradient(rgba(255,255,255,0.5), white);*/
+  /*animation-duration: 3.5s;
+  animation-iteration-count: infinite;*/
+  /*animation-timing-function: ease-in;*/
+  /*animation-direction: alternate;*/
+  /*animation-name: circle;*/
+}
+
+.box {
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 9px;
+  margin-top: 5px;
+}
+
+.nameDisplay:hover {
+  cursor: pointer;
+  color: slateblue;
 }
