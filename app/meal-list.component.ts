@@ -18,8 +18,9 @@ import { CaloriesPipe } from './calories.pipe';
     </select>
 
 
-    <div id="meal-list" *ngFor="#currentMeal of mealList | calories:filterCalories">
-      <h3 (click)="mealWasSelected(currentMeal)">
+    <div id="meal-list" *ngFor="#currentMeal of mealList | calories:filterCalories"
+      [class.box]="currentMeal === selectedMeal">
+      <h3 class="nameDisplay" (click)="mealWasSelected(currentMeal)">
         {{ currentMeal.name }}
       </h3>
       <meal-details *ngIf="currentMeal === selectedMeal" [meal]="currentMeal"></meal-details>
