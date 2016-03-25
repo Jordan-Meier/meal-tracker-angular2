@@ -1,4 +1,5 @@
 import { Component } from 'angular2/core';
+import { Meal } from './meal.model';
 
 @Component({
   selector: 'my-app',
@@ -10,5 +11,5 @@ import { Component } from 'angular2/core';
 })
 
 export class AppComponent {
-
+  public meals: Meal[];
 }
