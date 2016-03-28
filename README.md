@@ -35,14 +35,12 @@ gulp serve
 * HTML
 * CSS
 * SCSS
-* JavaScript
-* jQuery
+* TypeScript
 * Node.js
+* Angular2
 * bower
 * npm
 * Gulp
-* JSHint
-* Browserify
 * Bootstrap v3.3.6
 
 ###Copyright & Licensing
